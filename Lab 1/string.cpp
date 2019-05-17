@@ -1,4 +1,4 @@
-#include "string.h"
+#include "String.h"
 #include <cstring>
 
 namespace sict{
@@ -18,5 +18,11 @@ namespace sict{
 
     void String::display(std::ostream &os){
         os << courseCode;
+    }
+
+    std::ostream& operator<<(std::ostream& os, String& str){
+
+        str.display(os);
+        return os;
     }
 }

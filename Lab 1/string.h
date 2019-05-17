@@ -13,5 +13,6 @@ namespace sict{
         void display(std::ostream &os);
     };
     //helper function
+    std::ostream& operator<<(std::ostream& os, String& str);
 }
 #endif
